@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <title>Ecommerce product page </title>
+    <style>
+        body{
+		
+
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        .product-container {
+            max-width: 900px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            flex: 1 1 40%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-image img {
+            max-width: 75%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 1 1 60%;
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.5em;
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: #45a049;
+        }
+
+        .reviews {
+            margin-top: 30px;
+        }
+
+        .related-products {
+            margin-top: 30px;
+        }
+
+        .related-products img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+
+            .product-image, .product-details {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="contect.html">Contact</a>
+    </nav>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="shoes.webp" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="campus shoes">VESPER Black Men's Running Shoes</h2>
+            <p class="product-price">Mrp Rs 2000</p>
+			<p class="lightly-spaced-row">Inclusive of all Taxes</p>
+			
+			<p class="product-description">
+                Stride with confidence, slay in style with the Campus Vesper Men's Running Shoes.
+				Built for speed and comfort, these shoes with lace-up closure feature a lightweight mesh upper for a breathable fit. 
+				Enhanced with Memory Foam Extra Comfort Insole, these deliver plush cushioning for long runs, while the anti-slip sole design ensures stability on all surfaces. 
+				The striking black and mustard color combination adds a trendy edge, making these shoes the perfect blend of performance and style for all occasions!
+				
+				<p>
+				<span data-mce-fragment="1">
+				<strong> Occasion: </strong>
+				"Everyday"<br>
+	         
+				<strong>Insole: </strong>
+				"Memory Extra Bounce Comfort"<br>
+				<strong>Care Instructions: </strong>
+				"Wash in Lukewarm Water. Do Not Bleach"<br>
+				<strong>Upper Material: </strong>
+				"Mesh+Sublimation+Raise Printing+Embossing"<br>
+				<strong>Marketed by: </strong>
+				"Campus Activewear Ltd."<br>
+				<strong>Country of Origin: </strong>
+			"India"
+				</span><br>
+				<strong>Net Qty: </strong>
+				"1 Pair of Shoes"
+				</p>
+            </p>
+            <button class="add-to-cart-button">Add to Cart</button>
+
+            <div class="reviews">
+                <h3>Customer Reviews</h3>
+                <p>No reviews yet.</p>
+            </div>
+
+            <div class="related-products">
+                <h3>Related Products</h3>
+                <img src="related shoes.webp" alt="Related Product 1">
+                <img src="related shoes 2.jpg" alt="Related Product 2">
+				<img src="related shoes 3.jfif" alt="Related Product 3">
+                <img src="related shoes 4.jfif" alt="Related Product 4">
+				<img src="related shoes 5.jfif" alt="Related Product 5">
+                <img src="related shoes 6.jfif" alt="Related Product 6">
+				<img src="related shoes 7.jfif" alt="Related Product 7">
+				
+            </div>
+        </div>
+    </div>
+    <script>
+    // Optional JavaScript for interactive features
+    const productImage = document.querySelector('.product-image img');
+    productImage.addEventListener('mouseover', () => {
+        // Example: Add a simple hover effect
+        productImage.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+    });
+    productImage.addEventListener('mouseout', () => {
+        productImage.style.boxShadow = 'none';
+    });
+    </script>
+</body>
+</html>
